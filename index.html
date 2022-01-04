@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<title>Antherus</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+
+		
+
+		#menu{
+			background: #0E0816;
+			color: #E7DFDD;
+		}
+
+		#main{
+
+		}
+
+		#footer{
+
+		}	
+
+		.jewel{
+			background-color: #4717f6;
+		}
+
+		.stark{
+			color: #e7dfdd;
+		}
+
+		.fuschia{
+			background: #a239ca;
+		}
+
+		.azul{
+			background: #17ead9;
+		}
+
+		#bg-icon{
+			background-color: #0E0816;
+		}
+
+		.void{
+			background-color: #0e0816;
+		}
+
+		#bg-display{
+			background-image: url(img/bg-degrade.gif);
+		}
+
+
+
+	</style>
+</head>
+<body class="void">
+	<div id="menu" class="row container-fluid" >
+		<div class="">
+			<div class="">
+			<! -- Barra de navegação -->
+				<nav class="navbar navbar-expand-lg navbar-dark p-0 ">
+					<!--Logo -->
+					<div class="navbar-brand  px-5 ml-3 pb-1 " >
+						<img src="img/logo8.png" class="mx-auto p-0   "  >
+					</div>
+					<!--Menu Hamburguer -->
+        <button class="navbar-toggler bg-warning col-12   " data-toggle="collapse" data-target="#navegacao">
+            <span class="navbar-toggler-icon  "></span>
+        </button>
+
+        <!--Navegação -->
+        <div class="collapse navbar-collapse ml-3 pl-3 pb-0 pt-0  " id="navegacao" >
+            <ul class="navbar-nav  " >
+                <li class="nav-item ">
+                    <a href="" class="nav-link btn btn-warning text-dark mr-5 ">Home</a>
+                </li>
+                <li class="nav-item ">
+                    <a href="" class="nav-link  btn btn-warning text-dark mr-5">Gestão de Mídias Sociais</a>
+                </li>
+                <li class="nav-item "> 
+                    <a href="" class="nav-link  btn btn-warning text-dark mr-5">Landing Pages</a>
+                </li>
+                <li class="nav-item ">
+                    <a href="" class="nav-link  btn btn-warning text-dark mr-5">Sobre a Antherus</a>
+                </li>
+                <li class="nav-item ">
+                    <a href="" class="nav-link  btn btn-warning text-dark mr-5">Atendimento</a>
+                </li>
+            </ul>
+        </div>
+				</nav>	
+				
+			</div>
+
+			<!-- Banner Conteudo Responsivo Acima de XS -->
+	<div class="row d-none d-sm-block pt-1 pb-0 ml-0 my-0 ">
+		<div style="width:100%;height:0;padding-bottom:33%;position:relative;" class="col-12">
+			<iframe src="img/fundo10.gif" width="99.5%" height="100%" style="position:absolute;  border:1px solid black; border-radius: 10px;" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+		</div>
+	</div>
+
+	<!-- Banner Conteudo Responsivo XS -->
+	<div class="d-block d-sm-none">
+		<div style="width:100%;height:0;padding-bottom:46%;position:relative;"><iframe src="https://giphy.com/embed/EpSb7HgO3lDjWtubvP" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+		
+	</div>	
+
+	<!-- Conteudo Display -->
+
+	<!-- Display Conteudo Responsivo Acima de XS 
+	<div class="row h-100 mt-0">
+		<div class="col-12 d-none d-sm-block  pb-0 ">
+			<div style="width:100%;height:100%;padding-bottom:33%;position:relative;" class="col-12">
+				<iframe src="img/bg-degrade.gif" width="103%" height="100%" style="position:absolute; overflow-y: hidden; " frameBorder="0" class="giphy-embed text-dark" allowFullScreen>Texto</iframe>
+			</div>
+		</div>
+		
+	</div>-->
+
+	
+	<!-- Display responsivo Acima de XS-->
+    <div class="row d-none d-sm-block pt-1 pb-0 ml-0 my-0 ">
+		<div class="card-columns row mt-3 pt-3 m-0 bg-header rounded" >
+      
+      <!--Display 1 -->
+      <div class="col-1"></div>
+      <div class="card col-10    ">
+      <h4 class="card-title mx-5  text-center text-dark">Gestão de Midias Sociais</h4>
+      <p class="card-text text-dark text-center">hhaahahh  ahshahsdsad jdajdsajdjasdjasd jadjasjdajdjasdja</p>
+      <img class="card-img-center p-2" src="{{anuncio.imagem.url}}">
+            <div>
+              
+              <div >Valor:{{anuncio.valor}}</div>
+              <a  class="btn btn-outline-primary btn-sm float-right mx-3 mb-3 d-inline"  href="">Detalhes do Veículos</a>
+              <div class="m-0 d-inline" style="font-size: 0.5em;">Anunciado por:{{ anuncio.anunciante }}</div>
+        </div>
+      </div>
+      
+
+
+     <!--Display 2 -->
+      <div class="col-1"></div>
+      <div class="card col-10   ">
+      <h4 class="card-title mx-5  text-center text-dark">Landing Pages</h4>
+      <p class="card-text text-dark text-center">hhaahahh  ahshahsdsad jdajdsajdjasdjasd jadjasjdajdjasdja</p>
+      <img class="card-img-center p-2" src="{{anuncio.imagem.url}}">
+            <div>
+              
+              <div >Valor:{{anuncio.valor}}</div>
+              <a  class="btn btn-outline-primary btn-sm float-right mx-3 mb-3 d-inline"  href="">Detalhes do Veículos</a>
+              <div class="m-0 d-inline" style="font-size: 0.5em;">Anunciado por:{{ anuncio.anunciante }}</div>
+        </div>
+      </div>
+      
+
+      <!--Display 3 -->
+      <div class="col-1"></div>
+      <div class="card col-10   ">
+      <h4 class="card-title mx-5  text-center text-dark">Geração de Leads</h4>
+      <p class="card-text text-dark text-center">hhaahahh  ahshahsdsad jdajdsajdjasdjasd jadjasjdajdjasdja</p>
+      <img class="card-img-center p-2" src="{{anuncio.imagem.url}}">
+            <div>
+              
+              <div >Valor:{{anuncio.valor}}</div>
+              <a  class="btn btn-outline-primary btn-sm float-right mx-3 mb-3 d-inline"  href="">Detalhes do Veículos</a>
+              <div class="m-0 d-inline" style="font-size: 0.5em;">Anunciado por:{{ anuncio.anunciante }}</div>
+        </div>
+      </div>
+      
+
+      <!--Display 4 -->
+      <div class="col-1"></div>
+      <div class="card col-10   ">
+      <h4 class="card-title mx-5  text-center text-dark">Designer Gráfico</h4>
+      <p class="card-text text-dark text-center">hhaahahh  ahshahsdsad jdajdsajdjasdjasd jadjasjdajdjasdja</p>
+      <img class="card-img-center p-2" src="{{anuncio.imagem.url}}">
+            <div>
+              
+              <div >Valor:{{anuncio.valor}}</div>
+              <a  class="btn btn-outline-primary btn-sm float-right mx-3 mb-3 d-inline"  href="">Detalhes do Veículos</a>
+              <div class="m-0 d-inline" style="font-size: 0.5em;">Anunciado por:{{ anuncio.anunciante }}</div>
+        </div>
+      </div>
+      
+      
+
+      
+    </div><!--Fim Colunas -->
+	</div>
+
+    <!--Display Responsivo XS-->
+    <div class="d-block d-sm-none">
+		<div class="card-columns row mt-3 pt-3 m-0 bg-header rounded" style="border: 1px solid red;">
+      
+      <!--Display 1 -->
+      <div class="col-1"></div>
+      <div class="card col-10    ">
+      <h4 class="card-title mx-5  text-center text-dark">Gestão de Midias Sociais</h4>
+      <p class="card-text text-dark text-center">hhaahahh  ahshahsdsad jdajdsajdjasdjasd jadjasjdajdjasdja</p>
+      <img class="card-img-center p-2" src="{{anuncio.imagem.url}}">
+            <div>
+              
+              <div >Valor:{{anuncio.valor}}</div>
+              <a  class="btn btn-outline-primary btn-sm float-right mx-3 mb-3 d-inline"  href="">Detalhes do Veículos</a>
+              <div class="m-0 d-inline" style="font-size: 0.5em;">Anunciado por:{{ anuncio.anunciante }}</div>
+        </div>
+      </div>
+      <div class="col-1"></div>
+
+
+     <!--Display 2 -->
+      <div class="col-1"></div>
+      <div class="card col-10   ">
+      <h4 class="card-title mx-5  text-center text-dark">Landing Pages</h4>
+      <p class="card-text text-dark text-center">hhaahahh  ahshahsdsad jdajdsajdjasdjasd jadjasjdajdjasdja</p>
+      <img class="card-img-center p-2" src="{{anuncio.imagem.url}}">
+            <div>
+              
+              <div >Valor:{{anuncio.valor}}</div>
+              <a  class="btn btn-outline-primary btn-sm float-right mx-3 mb-3 d-inline"  href="">Detalhes do Veículos</a>
+              <div class="m-0 d-inline" style="font-size: 0.5em;">Anunciado por:{{ anuncio.anunciante }}</div>
+        </div>
+      </div>
+      <div class="col-1"></div>
+
+      <!--Display 3 -->
+      <div class="col-1"></div>
+      <div class="card col-10   ">
+      <h4 class="card-title mx-5  text-center text-dark">Geração de Leads</h4>
+      <p class="card-text text-dark text-center">hhaahahh  ahshahsdsad jdajdsajdjasdjasd jadjasjdajdjasdja</p>
+      <img class="card-img-center p-2" src="{{anuncio.imagem.url}}">
+            <div>
+              
+              <div >Valor:{{anuncio.valor}}</div>
+              <a  class="btn btn-outline-primary btn-sm float-right mx-3 mb-3 d-inline"  href="">Detalhes do Veículos</a>
+              <div class="m-0 d-inline" style="font-size: 0.5em;">Anunciado por:{{ anuncio.anunciante }}</div>
+        </div>
+      </div>
+      <div class="col-1"></div>
+
+      <!--Display 4 -->
+      <div class="col-1"></div>
+      <div class="card col-10   ">
+      <h4 class="card-title mx-5  text-center text-dark">Designer Gráfico</h4>
+      <p class="card-text text-dark text-center">hhaahahh  ahshahsdsad jdajdsajdjasdjasd jadjasjdajdjasdja</p>
+      <img class="card-img-center p-2" src="{{anuncio.imagem.url}}">
+            <div>
+              
+              <div >Valor:{{anuncio.valor}}</div>
+              <a  class="btn btn-outline-primary btn-sm float-right mx-3 mb-3 d-inline"  href="">Detalhes do Veículos</a>
+              <div class="m-0 d-inline" style="font-size: 0.5em;">Anunciado por:{{ anuncio.anunciante }}</div>
+        </div>
+      </div>
+      <div class="col-1"></div>
+      
+
+      
+    </div><!--Fim Colunas -->
+		
+	</div>	
+	
+
+
+
+	<div class="bg-warning text-center text-dark">
+		<span class="mx-5" >16 99337 - 9492</span>
+		<span class="mx-5">www.antherus.com.br</span>
+	</div>
+
+
+
+		</div>
+
+	</div>
+
+
+
+
+
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>
