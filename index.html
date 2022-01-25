@@ -203,9 +203,11 @@
 		}
 		
 		button{
-			position:relative;
-			left:30px;
+			position:absolute;
+			left:50px;
 		}
+
+		
 
 		#form-index{
 			position: absolute;
@@ -256,11 +258,24 @@
 
 		}
 
+		@media (max-width: 767.98px) {
+			body{
+				width: 767.98px;
+			}
+		}
+
+		input{
+			height: 3em;
+		}
+
+
+		
+
 
 
 	</style>
 </head>
-<body style="style=min-width: 500px;" id="bg-terra">
+<body  >
 	<div  class="row container-fluid" >
 		<header class="m-0 p-0 " >
 		
@@ -269,13 +284,13 @@
 
 
 					<!--Logo Marca Acima de XS-->
-					<div class="navbar-brand  px-5 ml-0 pb-1 mr-0  d-none d-sm-block " >
+					<div class="navbar-brand  px-5 ml-0 pb-1 mr-0 mt-5  d-none d-sm-block " >
 						<img src="logo8.png" class="mx-auto p-0   "  >
 					</div>
 
 					<!-- Logo Marca XS-->
 
-					<div class="navbar-brand    d-block d-sm-none " id="logo-responsivo" >
+					<div class="navbar-brand    d-block d-sm-none " id="logo-responsivo" >2
 						<img src="logo8.png" class="   "  >
 					</div>
 
@@ -284,13 +299,13 @@
 		
 
 					<!--Menu Hamburguer -->
-        <button class="navbar-toggler bg-warning ml-5 m-5  p-3 col-sm-6 " data-toggle="collapse" data-target="#navegacao" >
+        <button class="navbar-toggler bg-warning mx-2 px-5 col-sm-6 my-5 " data-toggle="collapse" data-target="#navegacao" >
             <span class="navbar-toggler-icon  mx-5 p-3"></span>
         </button>
 
 
         <!--Navegação -->
-        <div class="collapse navbar-collapse  pb-0 pt-0 ml-5 d-md-none d-lg-block  " id="navegacao" >
+        <div class="collapse navbar-collapse  pb-5 mb-3 pt-0 ml-5 d-md-none d-lg-block  " id="navegacao" >
             <ul class="navbar-nav m-0 p-0 " >
                 <li class="nav-item pb-2 pl-1 col-12 col-sm-6 ml-3 ">
                     <a href="" class="nav-link btn btn-warning text-dark  font-weight-bold">Home</a>
@@ -314,9 +329,9 @@
 		</header>
 		
 		<!--Conteudo Principal -->
-		<main class=" row mt-0 p-0  " >
+		<main class=" row mt-0 p-0  "  >
 			<!-- Display responsivo Acima de XS-->
-    		<div class=" p-0 m-5 "  >
+    		<div class=" p-5 m-5 d-md-block d-lg-none d-lg-block d-xl-none d-none d-xl-block"  >
 			    	<!--Cards do Display-->
 					<div class="card-columns row m-0 p-0 px-1 shadow rounded " >
 						<div class="card col-12  mx-0 mt-0 pt-0 shadow" id="overlay-index">
@@ -328,7 +343,7 @@
 
 						<p  class="text-center text-white text-justify text-bold m-1 pt-2 shadow-lg p-3 mb-5 bg-black rounded  " style="font-size: 1.5em;">Construimos páginas profissionais com designer responsivo que se adapta a maioria dos dispositivos.<br>Dispositivo como Tablet, Celulares de diverso tamanhos, Notebook e até SmartTV <br>
 						<br>
-						<img class="card-img-center img-fluid p-2" src="img-responsivo-5.png">
+						<img class="card-img-center img img-fluid p-2" src="img-responsivo-5.png">
 
 						<h1 class="card-text  text-center text-white text-justify my-2 ">A Page certa está aqui</h1>
 						<p class="text-center text-white text-justify text-bold m-2 pt-2 shadow-lg p-3 mb-5 bg-black rounded  " style="font-size:1.5em;">
@@ -352,7 +367,7 @@
 				      
 				      <h1 class="card-title m-5 p-5  text-center text-white">Gestão de Midias Sociais</h1>
 				       <h3 class="card-text  text-center text-white text-justify my-3 p-1 neon-text">Muito mais do que fazer post no Facebook ou Instagram!!<br></h3>
-				       <img class="card-img-center  p-5 ml-5" src="img-card-2.png">
+				       <img class="card-img-center img img-fluid p-5 ml-5" src="img-card-2.png">
 
 						<p  class="text-center text-white text-justify text-bold m-2 pt-2 shadow-lg  mb-5 bg-black rounded  " style="font-size: 1.5em;">Elaboramos o designer adicionando personalidade e identidade visual a sua marca ou produto.<br>
 						Geramos uma persona a marca ou produto para aproximar e engajar. <br>
@@ -380,7 +395,7 @@
 				      
 				      <h1 class="card-title m-5  text-center text-white">Elaboração de Conteúdo</h1>
 				       <h3 class="card-text  text-center text-white text-justify my-5 p-1">Muito mais do simplesmente postar nas redes sociais!!<br></h3>
-				       <img class="card-img-center ml-5 pl-2 " src="img-card-7.png">
+				       <img class="card-img-center ml-5 pl-2 img img-fluid " src="img-card-7.png">
 
 						<p  class="text-center text-white text-justify text-bold m-2  shadow-lg p-3 mb-5 bg-black rounded  " style="font-size: 1.5em;">Fazemos as artes gráficas profissionais para suas postagens, elaboração de campanhas de marketing para alavancar suas vendas.<br>
 Construímos sua identidade visual para o público sempre assimilar o conteúdo com sua marca,<br> conteúdo criativos que prendem a atenção do público.<br> Editamos fotos, formatamos para os diversos tamanhos exigidos pelas mídias sociais.<br>
@@ -408,8 +423,11 @@ Tendo assim presença constante nas mídias sociais,<br>gerando engajamento com 
 				      
 	    			</div><!--Fim Colunas -->
 			</div>
+			<!-- FIM DO TAMANNHO LG E XL -->
 
-			<div class="row neon">
+			<!-- FORMUARIO -->
+
+			<div class="row neon d-md-block d-lg-none d-lg-block d-xl-none d-none d-xl-block ">
 				<span class="col-10  "  id="form-index">
 					<form class=" col-6 d-inline neon " id="overlay"  >
 					<h1 class="text-center text-white my-5 neon-text">Landing Pages<br> Apartir de R$199,99*</h1>
@@ -441,68 +459,173 @@ Tendo assim presença constante nas mídias sociais,<br>gerando engajamento com 
 			</div>
 
 
-			<!--<div class=" row  " style="border:1px solid red; background-image: atendimento3.png;" >
-				
-				
+			
 
 			
-			<form class=" col-6 d-inline " id="overlay"  >
-				<div class="">
+			</div>
+			<!--FIM FORMULARIO -->
+
+
+
+		
+			
+
+		
+
+
+
+
+
+		<!-- Display responsivo ABAIXO DE MD-->
+    		<div class="  row ml-3 d-none d-sm-block d-md-none d-block d-sm-none"  >
+			    	<!--Cards do Display-->
+					<div class="card-columns  shadow rounded col-sm-12 ml-3 ">
+						<div class="card col-sm-12 ml-3   shadow" id="overlay-index">
+			      
+				      <!--Display -->
+				      <!-- Card 1-->
+				       <h1 class="card-title m-4  text-center text-white">A Construimos sua Web Pages</h1>
+				       <h2 class="card-text  text-center text-white text-justify my-5 p-1">Muito mais do que página.<br></h2>
+
+						<p  class="text-center text-white text-justify text-bold m-1 pt-2 shadow-lg p-3 mb-5 bg-black rounded  " style="font-size: 1.5em;">Construimos páginas profissionais com designer responsivo que se adapta a maioria dos dispositivos.<br>Dispositivo como Tablet, Celulares de diverso tamanhos, Notebook e até SmartTV <br>
+						<br>
+						<img class="card-img-center img img-fluid " src="img-responsivo-5.png">
+
+						<h1 class="card-text  text-center text-white text-justify my-2 ">A Page certa está aqui</h1>
+						<p class="text-center text-white text-justify text-bold m-2 pt-2 shadow-lg p-3 mb-5 bg-black rounded  " style="font-size:1.5em;">
+						Página de vendas<br>Landing Page<br>Hot Page<br> One-Page<br> Institucional!<br></p>
+
+						<p class="text-center text-white text-justify text-bold  shadow-lg bg-black rounded  " style="font-size:1.5em;">Aqui temos as melhores soluções para sua marca e sua empresa ter presença na internet e alcançar grandes resultados.
+						<br>
+						</p>
+
+						
+					</p>
+				      
+				      <div class="btn btn-primary btn-lg float-right mr-5 " >
+				       <a class="text-white"    href="">Saiba mais</a>
+				       </div>
+				       <!-- FINAL DO CARD -->
+
+
+
+				       <!-- CARD 2-->
+				      
+				      <h1 class="card-title m-5 p-5  text-center text-white">Gestão de Midias Sociais</h1>
+				       <h3 class="card-text  text-center text-white text-justify my-3 p-1 neon-text">Muito mais do que fazer post no Facebook ou Instagram!!<br></h3>
+				       <img class="card-img-center img img-fluid " src="img-card-2.png">
+
+						<p  class="text-center text-white text-justify text-bold m-2 pt-2 shadow-lg  mb-5 bg-black rounded  " style="font-size: 1.5em;">Elaboramos o designer adicionando personalidade e identidade visual a sua marca ou produto.<br>
+						Geramos uma persona a marca ou produto para aproximar e engajar. <br>
+						Afinal pessoas engajadas que consomem uma idéia!!!<br> Possivelmente consomem o produto!!<br><br>
+
+						Editamos fotos e vídeos para se ajustar perfeitamente nos tamanhos de post no  instagram, facebook , youtube e muitos mais <br>
+
+						Formatamos o público alvo utilizando ferramentas de captação de leads e monitoramento. <br>
+						Gerando Leads sobre quem é sua audiência e qual interesse, nível de engajamento com sua marca ou produtos.<br><br>
+
+						Clientes engajados compram, indicam, fazem avaliações positivas, gerando um ciclo de comunicação e bons negócios  entre comunidade, marca, empresa ou produto.<br>
+
+						Cuidamos de tudo para você focar no que interessa!!!<br>
+
+						Transformar as mídias sociais na sua vitrine de vendas e faturar muito!!!!!
+					</p>
+				      
+				      <div class="btn btn-primary btn-lg float-right mr-5 " >
+				       <a class="text-white"    href="">Saiba mais</a>
+				       </div>
+				       <!-- Final do Card-->
+				       <div class="m-3 p-5"></div>
+
+				       <!-- CARD 3-->
+				      
+				      <h1 class="card-title m-5  text-center text-white">Elaboração de Conteúdo</h1>
+				       <h3 class="card-text  text-center text-white text-justify my-5 p-1">Muito mais do simplesmente postar nas redes sociais!!<br></h3>
+				       <img class="card-img-center img img-fluid " src="img-card-7.png">
+
+						<p  class="text-center text-white text-justify text-bold m-2  shadow-lg p-3 mb-5 bg-black rounded  " style="font-size: 1.5em;">Fazemos as artes gráficas profissionais para suas postagens, elaboração de campanhas de marketing para alavancar suas vendas.<br>
+Construímos sua identidade visual para o público sempre assimilar o conteúdo com sua marca,<br> conteúdo criativos que prendem a atenção do público.<br> Editamos fotos, formatamos para os diversos tamanhos exigidos pelas mídias sociais.<br>
+
+Postagens temáticas nas datas especiais como Feriados, datas que impulsionam o comércio,<br>como <br>Natal<br> Dia dos Namorados<br> entre outras.<br>
+
+Tendo assim presença constante nas mídias sociais,<br>gerando engajamento com as pessoas,<br> e pessoas engajadas tendem a comprar, consumir ou indicar sua marca, gerando um ciclo sustentável de negócios.
+
+
+					</p>
+				      
+				      <div class="btn btn-primary btn-lg float-right mr-5  " >
+				       <a class="text-white"    href="">Saiba mais</a>
+				       </div>
+				       <!-- Final do Card-->
+				     <div class="m-5 p-3"></div>
+				       
+				      	</div>
+
+				       <div class="col-1"></div>
+				      
+
+
+				     
+				      
+	    			</div><!--Fim Colunas -->
+			</div>
+			<!-- FIM DO TAMANNHO LG E XL -->
+
+			<!-- FORMUARIO -->
+
+			<div class="  neon d-none d-sm-block d-md-none d-block d-sm-none ">
+				<span class="row "  >
+					<form class="  d-inline neon m-auto col-8" id="overlay"   >
+					<h1 class="text-center text-white my-5 neon-text">Landing Pages<br> Apartir de R$199,99*</h1>
 				 <div class="">
-       				<h1 class="text-center text-white">Preencha o Formulário<br>ou<br></h1>
-		       </div>
+       				<h1 class="text-center text-success my-5">Preencha o Formulário</h1>
 		       </div>
 		      
+		      
 		
-				<p><label for="id_whatsapp">WhatsApp</label> <input class="col-12 display-5" type="text" name="whatsapp" maxlength="9" required id="id_whatsapp" placeholder="Informe seu numero de contato"> </p>
-				<p><label for="email">Seu melhor e-mail<input class="col-12	" type="" name="email" placeholder="Seu melhor e-mail"></label></p>
-				<p><label>Qual seu tipo de Negócio<input class="col-12" type="" name="" placeholder="Qual tipo do seu negocio ?"></label></p>
-				<p><label>Nome para Contato<input class="col-12" type="" name="" placeholder="Qual seu nome ?"></label></p>
+				<p><label class=""  for="id_whatsapp">WhatsApp</label> <input class="col-10 mx-5" type="text" name="whatsapp" maxlength="9" required id="id_whatsapp" placeholder="Informe seu numero de contato"> </p>
+				<p><label   for="email">Seu melhor e-mail<input class="col-10	 mx-5" type="" name="email" placeholder="Seu melhor e-mail"></label></p>
+				<p><label>Qual seu tipo de Negócio<input class="col-10  mx-5" type="" name="" placeholder="Qual tipo do seu negocio ?"></label></p>
+				<p><label>Nome para Contato<input class="col-10  mx-5" type="" name="" placeholder="Qual seu nome ?"></label></p>
 				
-  					<p class="m-5 " style="font-size:2em;"><input class="col-1 " type="checkbox" id="" name="" checked mt-3 >Declara que aceita contato de nossa equipe de consultores.</p>
+  					<p class="m-5 " style="font-size:1em;"><input class="col-1 " type="checkbox" id="" name="" checked mt-3 >Declara que aceita contato de nossa equipe de consultores.</p>
   					
   				
-				<div class="btn btn-warning btn-block btn-sm col-4 float-right " style="font-size:2em;"  type="submit" name="enviar">Enviar</div>
+				<div class="btn btn-warning btn-block btn-sm col-4 float-right neon text-success mr-5 " style="font-size:2em;"  type="submit" name="enviar">Enviar</div>
 				
-				<div class="text-white">Rodape </div>
+				
 				
 			</form>
+				</span >
+				<div class="ml-5 pl-5 mt-5 pt-5 ">
+					<img class="ml-5 pl-5 img img-fluid " src="atendimento3.png">
+					<div class="d-block float-right mr-5">
+					
+				</div>
+			</div>
+
 
 			
-			<aside class="text-white col-6">Tecxtooooooo</aside>
+
+			
+			</div>
+			<!--FIM FORMULARIO -->
+
 
 
 			
-			</div>-->
-
-
 			
-
-
-
-
-
-
-
-
-    
-				
-			
-			
-			
-				
 
 		</main>
 
 
 
 			
-		</div>
-		<!-- Fim do Container-->
+		
+		
 				
-		
-	
-		
+	</div>	
+		<!-- Fim do Container-->
 			
 				
 			
@@ -510,6 +633,7 @@ Tendo assim presença constante nas mídias sociais,<br>gerando engajamento com 
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 
 </body>
 </html>
