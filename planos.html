@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+	<!-- Bootstrap-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<!-- Fontawesome CSS -->
+    <script src="https://kit.fontawesome.com/a69cec9c91.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
+
+	<title>Antherus</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+				width: auto;
+    			height:auto;
+    			background: #0e0816;
+        		background-repeat:no-repeat;
+        		background-size: cover;
+    		}
+
+
+		.jewel{
+			background-color: #4717f6;
+		}
+
+		.stark{
+			color: #e7dfdd;
+		}
+
+		.fuschia{
+			background: #a239ca;
+		}
+
+		.azul{
+			background: #17ead9;
+		}
+
+		#bg-icon{
+			background-color: #0E0816;
+		}
+
+		.void{
+			background-color: #0e0816;
+		}
+
+		#bg-display{
+			background-image: url(img/bg-degrade.gif);
+		}
+
+		#bg-terra{
+				height:1000%;
+    			background: #0e0816;
+        		background-repeat:no-repeat;
+        		background-size: cover;
+		}
+
+		#bg-header{
+        	background-image: url(fundo-terra10.gif);		
+		}
+
+		#bg-form{
+			background-image: url(atendimento.png);
+		}
+
+
+		#insta {
+                background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 0%, #fd5949 20%, #d6249f 60%, #285AEB 90%);
+                -webkit-background-clip: text;
+                /* Also define standard property for compatibility */
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+  
+               
+
+                border-color: black;
+  
+            }
+
+        #whatsapp-color{
+        	color: #34af23;
+        }
+
+        #fb-color{
+        	color: #3b5998;
+        }
+
+        #rodape{
+        	font-size: 2em;
+        }
+
+        .form{
+        	position: absolute;
+		   top: 150px;
+		   right:100px;
+		   color: white;
+	   }
+
+	   .form-responsivo{
+	   		position: absolute;
+		   top: 300px;
+		   right:100px;
+		   color: white;  
+	   }
+
+	   .form-responsivo-xs{
+	   		position: absolute;
+		   top: 0px;
+		   right:10px;
+		   bottom: 0px;
+		   color: white;  
+	   }
+
+
+
+	   .form-input{
+	   	font-style:heavy;
+	   	color: black;
+	   	text-align: center;
+	   }
+
+	   
+
+	   .footer-responsivo{
+	   	position: absolute;
+	   top: auto;
+	   }
+	   
+
+	   label{
+	   	display: block;
+	   	font-style: bold;
+	   }
+
+
+		
+
+
+
+
+		#overlay {
+		    position: absolute;
+		    left: 120;
+		    top: 100;
+		    background:white;
+		    background:rgba(0,0,0,0.3);
+		    padding:40px;
+		    border-radius: 10px;
+		    filter:blur(-5px);
+		    -o-filter:blur(-5px);
+		    -ms-filter:blur(-5px);
+		    -moz-filter:blur(-5px);
+		    -webkit-filter:blur(-5px);
+		}
+
+		#overlay-xs {
+		    position: relative;
+		    width:99%;
+		    margin: auto;
+		    background:white;
+		    background:rgba(0,0,0,0.3);
+		    border-radius: 10px;
+		    filter:blur(-5px);
+		    -o-filter:blur(-5px);
+		    -ms-filter:blur(-5px);
+		    -moz-filter:blur(-5px);
+		    -webkit-filter:blur(-5px);
+		}
+
+		#overlay-index {
+		    position: relative;
+		    width:99%;
+		    margin: auto;
+		    background:#4717f6;
+		    background:rgba(71,23,246,0.01);
+		    
+		    filter:blur(-5px);
+		    -o-filter:blur(-5px);
+		    -ms-filter:blur(-5px);
+		    -moz-filter:blur(-5px);
+		    -webkit-filter:blur(-5px);
+		   
+		}
+
+		.shadow{
+			 box-shadow: 40px 0px 100px 20px #4717f6 ;
+			 position: relative;
+			 margin-right: 100px;
+
+		}
+
+		#logo-responsivo{
+			max-width: 500px;
+		}
+		
+		button{
+			position:absolute;
+			left:10px;
+		}
+
+		
+
+		#form-index{
+			position: absolute;
+			margin-left: 150px;
+		}
+
+		label{
+			color: white;
+		}
+
+		p{
+			color: white;
+		}
+
+		
+
+		
+
+		
+
+
+		.neon-text, h1, h2, {
+			  animation: flicker 5s infinite alternate;
+			  color: #fff;
+		}
+
+		/* Flickering animation */
+			@keyframes flicker {
+			    
+			  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
+			      text-shadow:
+			       0 0 7px #ff0000,
+				   0 0 10px #ff000f,
+				   0 0 21px  #ff0000,
+				   0 0 42px #0fa,
+				   0 0 82px #0fa,
+				   0 0 92px #0fa,
+				   0 0 102px #0fa,
+				      0 0 151px #0fa;
+			  
+			  }
+			  
+			  20%, 24%, 55% {        
+			      text-shadow: none;
+			  }  
+
+
+		}
+
+		@media (max-width: 767.98px) {
+			body{
+				width: 767.98px;
+			}
+		}
+
+		input{
+			height: 3em;
+		}
+
+		.card-responsivo{
+			max-width: 280px;
+		}
+
+
+		
+
+
+
+	</style>
+</head>
+<body  >
+	<div  class="row container-fluid" >
+		<header class="m-0 p-0 " >
+		
+			<! -- Barra de navegação -->
+				<nav class="navbar navbar-expand-md navbar-dark px-0 py-2">
+
+
+					<!--Logo Marca Acima de XS-->
+					<div class="navbar-brand  d-none d-sm-block ml-0 " >
+						<img src="logo8.png" class=" ml-0"  >1
+					</div>
+
+					<!-- Logo Marca XS-->
+
+					<div class="navbar-brand    d-block d-sm-none " id="logo-responsivo" >2
+						<img src="logo8.png" class="   "  >
+					</div>
+
+					
+
+		
+
+					<!--Menu Hamburguer -->
+        <button class="navbar-toggler bg-warning mx-3 px-2 col-sm-5 my-2 " data-toggle="collapse" data-target="#navegacao" >
+            <span class="navbar-toggler-icon  mx-5 p-3"></span>
+        </button>
+
+
+        <!--Navegação -->
+        <div class="collapse navbar-collapse  pb-5 mb-3 pt-0 ml-5 d-md-none d-lg-block  " id="navegacao" >
+            <ul class="navbar-nav m-0 p-0 " >
+                <li class="nav-item pb-2 pl-1  col-sm-6 ">
+                    <a href="" class="nav-link btn btn-warning text-dark  font-weight-bold">Home</a>
+                </li>
+                <li class="nav-item pb-2 pl-1  col-sm-6 ">
+                    <a href="" class="nav-link  btn btn-warning text-dark  font-weight-bold">Nossas Soluções</a>
+                </li>
+                
+                <li class="nav-item pb-2 pl-1   col-sm-6  ">
+                    <a href="" class="nav-link  btn btn-warning text-dark font-weight-bold">Sobre a Antherus</a>
+                </li>
+                
+            </ul>
+        </div>
+        <!--Final Navegação -->
+
+        
+        <!--Final Navegação -->
+				</nav>	
+			
+		</header>
+		
+		<!--Conteudo Principal -->
+		<main class=" row mt-0 p-0  "  >
+			<!-- Display responsivo Acima de XS-->
+    		<div class=" p-5 m-5 d-md-block d-lg-none d-lg-block d-xl-none d-none d-xl-block col-12 "  >
+ 						<div class="card-deck">
+							  <div class="card ">
+							    <img class="card-img-top" src=".../100px200/" alt="Imagem de capa do card">
+							    <div class="card-body">
+							      <h5 class="card-title">Título do card</h5>
+							      <p class="card-text">Este é um card mais longo com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este conteúdo é um pouco maior.</p>
+							      <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+							    </div>
+							  </div>
+
+								  <div class="card">
+								    <img class="card-img-top" src=".../100px200/" alt="Imagem de capa do card">
+								    <div class="card-body">
+								      <h5 class="card-title">Título do card</h5>
+								      <p class="card-text">Este é um card com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
+								      <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+								    </div>
+								  </div>	
+
+
+							  <div class="card">
+							    <img class="card-img-top" src=".../100px200/" alt="Imagem de capa do card">
+							    <div class="card-body">
+							      <h5 class="card-title">Título do card</h5>
+							      <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este card tem o conteúdo ainda maior que o primeiro, para mostrar a altura igual, em ação.</p>
+							      <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+							    </div>
+							  </div>
+						</div>
+			</div>
+			<!-- FIM DO TAMANNHO LG E XL -->
+
+			<!-- FORMUARIO -->
+
+			<div class="row neon d-md-block d-lg-none d-lg-block d-xl-none d-none d-xl-block ">
+				
+				
+
+			
+
+			
+			</div>
+			
+
+
+
+		
+			
+
+		
+
+
+
+
+
+		<!-- Display responsivo ABAIXO DE MD-->
+    		<div class="  row ml-3 d-none d-sm-block d-md-none d-block d-sm-none"  >
+
+    					<div class="">
+							  <div class="card col-6 card-responsivo">
+							    <img class="card-img-top" src=".../100px200/" alt="Imagem de capa do card">
+							    <div class="card-body">
+							      <h5 class="card-title">Título do card</h5>
+							      <p class="card-text">Este é um card mais longo com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este conteúdo é um pouco maior.</p>
+							      <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+							    </div>
+							  </div>
+
+								  <div class="card col-6 card-responsivo">
+								    <img class="card-img-top" src=".../100px200/" alt="Imagem de capa do card">
+								    <div class="card-body">
+								      <h5 class="card-title">Título do card</h5>
+								      <p class="card-text">Este é um card com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
+								      <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+								    </div>
+								  </div>	
+
+
+							  <div class="card col-6 card-responsivo">
+							    <img class="card-img-top" src=".../100px200/" alt="Imagem de capa do card">
+							    <div class="card-body">
+							      <h5 class="card-title">Título do card</h5>
+							      <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este card tem o conteúdo ainda maior que o primeiro, para mostrar a altura igual, em ação.</p>
+							      <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+							    </div>
+							  </div>
+						</div>
+			    	
+			</div>
+			<!-- FIM DO TAMANNHO LG E XL -->
+
+			
+
+
+			
+			
+
+		</main>
+
+
+
+			
+		
+		
+				
+	</div>	
+		<!-- Fim do Container-->
+			
+				
+			
+		
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
