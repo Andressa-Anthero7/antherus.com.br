@@ -79,13 +79,7 @@
         	font-size: 2em;
         }
 
-        .form{
-        	position: relative;
-		   top: 250px;
-		   right:100px;
-		   color: white;
-	   }
-
+       
 	   .form-responsivo{
 	   		position: absolute;
 		   top: 350px;
@@ -126,7 +120,7 @@
     		body {
     			height:1200px;
     			background: #0e0816;
-        		background-image: url(fundo-terra10.gif);
+        		background-image: url(fundo-terra6.gif);
         		background-repeat:no-repeat;
         		background-size: cover;
     		}
@@ -134,16 +128,37 @@
     		footer{
     			font-size: 2em;
     		}
+    		.form{
+    		max-width: 500px;
+    		margin-left: 25%;
+        	position: relative;
+		   color: yellow; 
+	   }
+
+
+	   		h1{
+	   			margin-left: 0px;
+	   		}
 		}
 
-		@media (max-width: 420px) {
+		@media (max-width: 320px) {
     		body {
     			height:1000px;
     			background: #0e0816;
-        		background-image: url(fundo-terra10.gif);
+        		background-image: url(fundo-terra6.gif);
         		background-repeat:no-repeat;
         		background-size: cover;
     		}
+
+    		 .form{
+        	position: relative;
+		   top: 250px;
+		   right:100px;
+		   color: white;
+	   }
+
+
+
 
 
 		}
@@ -217,7 +232,7 @@
 </head>
 <body  >
 	<div  class="row container-fluid" >
-		<header>
+		<header class="mb-0">
 		
 			<! -- Barra de navegação -->
 				<nav class="navbar  navbar-dark px-0 py-2 ">
@@ -225,12 +240,12 @@
 
 					<!--Logo Marca Acima de XS-->
 					<div class="navbar-brand  px-5 ml-3 pb-1  d-none d-sm-block " >
-						<img src="logo11.png" class="mx-auto p-0   "  >
+						<img src="logo11.png" class="mx-auto p-0   "  >1
 					</div>
 
 					<!--Logo Marca Responsivo XS-->
 					<div class="navbar-brand d-block d-sm-none p-0 m-0 " >
-						<img src="logo8.png" class="  img img-fluid "  >
+						<img src="logo8.png" class="  img img-fluid "  >2
 					</div>
 
 		
@@ -250,14 +265,17 @@
 				
 
 			
-			<form class="form ml-5 pl-5 mt-2 mb-5 " id="overlay" >
-				<div class="m-0 p-o">
+			<form class="form mt-0 " >
+			
 				 <div class="m-3 px-5">
-       				<h1 class="text-center text-white m-5 p-3">Preencha o Formulário<br>ou<br></h1>
+       				<h1 class="text-center text-white  ">Preencha <br>o<br> Formulário</h1>
 		       </div>
-		       </div>
+		      
 		
-				<p><label for="id_whatsapp">WhatsApp1</label> <input class="col-12 display-5" type="text" name="whatsapp" maxlength="9" required id="id_whatsapp" placeholder="Informe seu numero de contato"> </p>
+				<p>
+					<label for="id_whatsapp">WhatsApp1</label>
+					 <input class="col-12 " type="text" name="whatsapp" maxlength="9" required id="id_whatsapp" placeholder="Informe seu numero de contato">
+				</p>
 				<p><label for="email">Seu melhor e-mail<input class="col-12" type="" name="email" placeholder="Seu melhor e-mail"></label></p>
 				<p><label>Qual seu tipo de Negócio<input class="col-12" type="" name="" placeholder="Qual tipo do seu negocio ?"></label></p>
 				<p><label>Nome para Contato<input class="col-12" type="" name="" placeholder="Qual seu nome ?"></label></p>
